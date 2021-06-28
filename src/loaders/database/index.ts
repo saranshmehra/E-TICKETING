@@ -15,13 +15,12 @@ const databaseLoader = async () => new Promise<any>((resolve, reject) => {
       resolve(db);
       saveUser({
         name: 'Administrator',
-        email: 'admin@relinns.com',
+        email: 'admin@admin.com',
         gender: 'MALE',
-        phone: '',
-        department: 'ADMIN',
-        role: ['ADMIN'],
-        password: await hashPassword('12345678'),
-        status: 'ACTIVE'
+        phone: '9814602599',
+        age: 30,
+        role: 'ADMIN',
+        password: await hashPassword('12345678')
       })
         .then()
         .catch(() => {
